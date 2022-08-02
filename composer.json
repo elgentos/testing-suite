@@ -1,0 +1,14 @@
+{
+    "name": "elgentos/elgentos-testing-suite",
+    "description": "Elgentos Testing Suite",
+    "authors": [
+        {
+            "name": "Elgentos BV",
+            "email": "info@elgentos.nl"
+        }
+    ],
+    "require": {
+        "youwe/testing-suite": "^2.12",
+        "elgentos/coding-standard-phpstorm": "dev-master"
+    }
+}
