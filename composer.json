@@ -9,6 +9,6 @@
     ],
     "require": {
         "youwe/testing-suite": "^2.12",
-        "elgentos/coding-standard-phpstorm": "dev-master"
+        "elgentos/coding-standard-phpstorm": "^1.0"
     }
 }
