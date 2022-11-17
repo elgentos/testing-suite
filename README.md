@@ -10,6 +10,15 @@ This uses `youwe/testing-suite`, but we can add/change tests as we like.
 composer require elgentos/testing-suite --dev
 ```
 
+## Configuration
+
+Add this to your `phpstan.neon`;
+
+```
+includes:
+    - vendor/bitexpert/phpstan-magento/extension.neon
+```
+
 ## Run it
 
 ```
