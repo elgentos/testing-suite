@@ -8,9 +8,10 @@
         }
     ],
     "require": {
-        "youwe/testing-suite": "^2.12",
+        "bitexpert/phpstan-magento": "^0.27.0",
+        "digitalrevolution/php-codesniffer-baseline": "^1.1",
         "elgentos/coding-standard-phpstorm": "^1.0",
-        "bitexpert/phpstan-magento": "^0.27.0"
+        "youwe/testing-suite": "^2.12"
     },
     "config": {
         "sort-packages": true,
