@@ -1,0 +1,10 @@
+includes:
+  - phpstan-baseline.neon
+  - vendor/bitexpert/phpstan-magento/extension.neon
+
+parameters:
+  excludePaths:
+    - app/bootstrap.php
+    - elastic.php
+    - deploy.php
+    - pub/autocomplete.php

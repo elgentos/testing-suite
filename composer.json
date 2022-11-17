@@ -32,5 +32,13 @@
             "/phpcs.xml",
             "/phpmd.xml"
         ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp -n vendor/elgentos/testing-suite/templates/files/magento2/phpcs.xml .",
+            "cp -n vendor/elgentos/testing-suite/templates/files/magento2/phpmd.xml .",
+            "cp -n vendor/elgentos/testing-suite/templates/files/magento2/phsptan.neon .",
+            "touch phpstan-baseline.neon"
+        ]
     }
 }
