@@ -1,0 +1,14 @@
+<templateSet group="M2-menu">
+  <template name="m2menuadd" value="&lt;add id=&quot;$menuId$&quot; title=&quot;$title$&quot; translate=&quot;title&quot; module=&quot;$module$&quot; sortOrder=&quot;$order$&quot; parent=&quot;$parentMenuId$&quot; action=&quot;$controllerPath$&quot; resource=&quot;$resourceId$&quot;/&gt;" description="Add new menu" toReformat="false" toShortenFQNames="true">
+    <variable name="menuId" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parentMenuId" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerPath" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resourceId" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

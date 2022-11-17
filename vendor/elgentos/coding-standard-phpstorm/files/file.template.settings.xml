@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="M2-Acl-XML.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-Class.php" reformat="false" live-template-enabled="true" />
+      <template name="M2-Class-Block.php" reformat="false" live-template-enabled="true" />
+      <template name="M2-Class-Helper.php" reformat="false" live-template-enabled="true" />
+      <template name="M2-Class-Observer.php" reformat="false" live-template-enabled="true" />
+      <template name="M2-Class-ViewModel.php" reformat="false" live-template-enabled="true" />
+      <template name="M2-Config-XML.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-Db-schema-XML.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-DI.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-Extension-Attributes-XML.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-Layout-XML.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-Module-XML.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-Registration.php" reformat="false" live-template-enabled="true" />
+      <template name="M2-Sales-XML.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-System-include-XML.xml" reformat="false" live-template-enabled="true" />
+      <template name="M2-System-XML.xml" reformat="false" live-template-enabled="true" />
+    </default_templates>
+    <includes_templates>
+      <template name="M2-PHP-File-Header.php" reformat="true" live-template-enabled="true" />
+      <template name="M2-Settings.php" reformat="true" live-template-enabled="true" />
+      <template name="M2-XML-File-Header.xml" reformat="true" live-template-enabled="true" />
+    </includes_templates>
+  </component>
+</project>

@@ -1,0 +1,50 @@
+{
+    "name": "youwe/coding-standard",
+    "description": "Youwe PHP Coding Standard",
+    "license": "MIT",
+    "type": "phpcodesniffer-standard",
+    "authors": [
+        {
+            "name": "Youwe B.V.",
+            "email": "info@youweagency.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "phpmd/phpmd": "^2.0",
+        "squizlabs/php_codesniffer": "^3.5.4"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Youwe\\CodingStandard\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "vendor/squizlabs/php_codesniffer/autoload.php"
+        ]
+    },
+    "archive": {
+        "exclude": [
+            "/.gitignore",
+            "/phpunit.xml",
+            "/phpmd.xml",
+            "/phpstan.neon",
+            "/phpcs.xml",
+            "/docker-compose.yml",
+            "/.env.dev",
+            "/grumphp.yml",
+            "/pdepend.xml",
+            "/tests"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    }
+}

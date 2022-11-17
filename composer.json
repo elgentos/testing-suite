@@ -9,6 +9,27 @@
     ],
     "require": {
         "youwe/testing-suite": "^2.12",
-        "elgentos/coding-standard-phpstorm": "^1.0"
+        "elgentos/coding-standard-phpstorm": "^1.0",
+        "bitexpert/phpstan-magento": "^0.27.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "elgentos/coding-standard-phpstorm": true,
+            "phpro/grumphp-shim": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "youwe/testing-suite": true
+        }
+    },
+    "archive": {
+        "exclude": [
+            "/.gitignore",
+            "/grumphp.yml",
+            "/pdepend.xml",
+            "/phpstan.neon",
+            "/phpunit.xml",
+            "/phpcs.xml",
+            "/phpmd.xml"
+        ]
     }
 }

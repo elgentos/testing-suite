@@ -1,0 +1,46 @@
+{
+    "name": "youwe/file-mapping",
+    "description": "File mapping library",
+    "license": "MIT",
+    "type": "library",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Youwe B.V.",
+            "email": "info@youweagency.com"
+        },
+        {
+            "name": "Jan-Marten de Boer",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0"
+    },
+    "require-dev": {
+        "kint-php/kint": "@stable",
+        "mikey179/vfsstream": "@stable",
+        "phpunit/phpunit": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Youwe\\FileMapping\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Youwe\\FileMapping\\Tests\\": "tests"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/phpunit.xml",
+            "/.gitignore"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

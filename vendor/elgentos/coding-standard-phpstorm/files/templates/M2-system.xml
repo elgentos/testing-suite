@@ -1,0 +1,158 @@
+<templateSet group="M2-system">
+  <template name="m2syssection" value="&lt;section id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;text&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot;&gt;&#10;    &lt;class&gt;$cssClass$&lt;/class&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;tab&gt;$tabId$&lt;/tab&gt;&#10;    &lt;resource&gt;$vendor$_$namespace$::config_$Acl$&lt;/resource&gt;&#10;    $END$        &#10;&lt;/section&gt;" description="Add a section to system.xml" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="cssClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="tabId" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="vendor" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Acl" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysinclude" value="&lt;include path=&quot;$vendor$_$namespace$::$path$.xml&quot;/&gt;" description="Include another system.xml" toReformat="false" toShortenFQNames="true">
+    <variable name="vendor" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysgroup" value="&lt;group id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;text&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    $END$    &#10;&lt;/group&gt;" description="Add a group to system.xml" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldcmspage" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;select&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;source_model&gt;Magento\Cms\Model\Config\Source\$type$&lt;/source_model&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for selecting a cms block/page" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="&quot;Page&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldyesno" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;select&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;source_model&gt;Magento\Config\Model\Config\Source\Yesno&lt;/source_model&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for yes/no." toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldpagelayout" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;select&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;source_model&gt;Magento\Cms\Model\Page\Source\PageLayout&lt;/source_model&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for selecting page layout" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldenabledisable" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;select&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;source_model&gt;Magento\Config\Model\Config\Source\Enabledisable&lt;/source_model&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for enabling/disabling." toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldpassword" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;obscure&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;backend_model&gt;Magento\Config\Model\Config\Backend\Encrypted&lt;/backend_model&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for passwords" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldtext" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;text&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for a text field" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldtextarea" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;textarea&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for a textarea field" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldpricetype" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;select&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;source_model&gt;Magento\Tax\Model\System\Config\Source\Tax\Display\Type&lt;/source_model&gt;&#10;    &lt;backend_model&gt;Magento\Tax\Model\Config\Notification&lt;/backend_model&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for selecting a price type" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldproducttax" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;select&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;source_model&gt;Magento\Tax\Model\TaxClass\Source\Product&lt;/source_model&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for selecting a tax class." toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2sysfieldcountry" value="&lt;field id=&quot;$name$&quot; translate=&quot;label&quot; type=&quot;select&quot; sortOrder=&quot;$order$&quot; showInDefault=&quot;$boolDefault$&quot; showInWebsite=&quot;$boolWebsite$&quot; showInStore=&quot;$boolStore$&quot; canRestore=&quot;$boolRestore$&quot;&gt;&#10;    &lt;label&gt;$label$&lt;/label&gt;&#10;    &lt;source_model&gt;Magento\Tax\Model\System\Config\Source\Tax\Country&lt;/source_model&gt;&#10;&lt;/field&gt;&#10;$END$" description="Field for countries" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="boolDefault" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolWebsite" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolStore" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="boolRestore" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

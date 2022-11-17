@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright Youwe. All rights reserved.
+ * https://www.youweagency.com
+ */
+-->
+<ruleset name="Global/PhpUnit">
+    <description>Coding standard for unit tests.</description>
+</ruleset>

@@ -1,0 +1,12 @@
+<templateSet group="M2-acl">
+  <template name="m2aclresource" value="&lt;resource id=&quot;$vendor$_$namespace$::$resourceId$&quot; title=&quot;$title$&quot; translate=&quot;title&quot; sortOrder=&quot;$order$&quot;&gt;&#10;    m2aclresource$END$&#10;&lt;/resource&gt;" description="acl resource template" toReformat="false" toShortenFQNames="true">
+    <variable name="vendor" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="namespace" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="resourceId" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

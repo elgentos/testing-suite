@@ -1,0 +1,25 @@
+<templateSet group="M2-di">
+  <template name="m2diplugin" value="&lt;type name=&quot;$orgClass$&quot;&gt;&#10;    &lt;plugin sortOrder=&quot;$order$&quot; name=&quot;$namePlugin$&quot; type=&quot;$pluginClass$&quot;/&gt;&#10;&lt;/type&gt;&#10;$END$" description="Create an plugin" toReformat="true" toShortenFQNames="true">
+    <variable name="orgClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="order" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="namePlugin" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pluginClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2divirtual" value="&lt;virtualType name=&quot;$name$&quot; type=&quot;$class$&quot;/&gt;&#10;$END$" description="Create an virtual class" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="m2dipreference" value="&lt;preference for=&quot;$orgClass$&quot; type=&quot;$newClass$&quot;/&gt;&#10;$END$" description="Create an preference" toReformat="true" toShortenFQNames="true">
+    <variable name="orgClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="newClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

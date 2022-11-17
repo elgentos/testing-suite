@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright Youwe. All rights reserved.
+ * https://www.youweagency.com
+ */
+-->
+<ruleset name="Global">
+    <description>Global coding standards</description>
+
+    <rule ref="../GlobalCommon"/>
+    <rule ref="../GlobalPhpUnit"/>
+</ruleset>
