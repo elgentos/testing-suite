@@ -66,3 +66,27 @@ If you are implementing this in an existing project, do the work to make all tes
 static:testingsuite:
   allow_failure: false
 ```
+
+## Configure Phpstorm
+
+This assumes you're using [our Docker environment](https://github.com/JeroenBoersma/docker-compose-development/).
+
+1. Go to **Settings > PHP > Quality Tools**
+1. Perform these steps for `PHP_CodeSniffer`, `Mess Detector`, `PHP CS Fixer` and `PHPStan`:
+    1. Click on the `...` behind the Configuration dropdown.
+    1. Click on the blue `+` sign.
+    1. Choose `development_php81:latest`, click OK
+    1. Click Ok
+1. Go to **Settings > Editor > Inspections > PHP > Quality Tools**
+    1. Disable `PHP CS Fixer validation`
+    1. Enable `PHP Mess Detector validation`
+        1. Under "Custom Rulesets", clear the list and add `vendor/youwe/coding-standard-magento2/src/YouweMagento2/`
+        1. Click Apply
+    1. Enable `PHP_CodeSniffer validation`
+        1. Under "Coding standard", choose "YouweMagento2"
+        1. Click Apply
+    1. Enable `PHPStan validation`
+        1. Make sure the Configuration file and the Autoload file paths are empty
+        1. Make sure you have the `phpstan.neon` file in your project root
+        1. Click Apply
+    1. Disable `Psalm validation`
