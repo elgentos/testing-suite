@@ -5,6 +5,7 @@ includes:
 parameters:
   excludePaths:
     - app/bootstrap.php
+    - app/autoload.php
     - elastic.php
     - deploy.php
     - pub/autocomplete.php
