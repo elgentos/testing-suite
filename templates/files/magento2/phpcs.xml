@@ -7,6 +7,7 @@
     <description>PHPCS</description>
     <exclude-pattern>phpserver/*</exclude-pattern>
     <exclude-pattern>app/etc/*</exclude-pattern>
+    <exclude-pattern>app/(functions|bootstrap|autoload).php</exclude-pattern>
     <exclude-pattern>deploy.php</exclude-pattern>
     <exclude-pattern>index.php</exclude-pattern>
     <rule ref="YouweMagento2"/>
