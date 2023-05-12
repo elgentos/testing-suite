@@ -1,5 +1,0 @@
-{default/,}grumphp.yml
-{default/dot,.}gitignore
-{default/,}pdepend.xml
-{default/,}phpstan.neon
-{default/,}phpunit{_dist,}.xml

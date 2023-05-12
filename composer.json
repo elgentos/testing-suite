@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "bitexpert/phpstan-magento": "^0.27.0",
+        "bitexpert/phpstan-magento": "^0.28",
         "digitalrevolution/php-codesniffer-baseline": "^1.1",
         "elgentos/coding-standard-phpstorm": "^1.0",
         "youwe/testing-suite": "^2.12"
@@ -19,7 +19,8 @@
             "elgentos/coding-standard-phpstorm": true,
             "phpro/grumphp-shim": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "youwe/testing-suite": true
+            "youwe/testing-suite": true,
+            "digitalrevolution/php-codesniffer-baseline": true
         }
     },
     "archive": {
