@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13d3ee9f3d5463443cd524b83aca38b6",
+    "content-hash": "42ecda3d01ba695fd790ce94212c5a4e",
     "packages": [
         {
             "name": "bitexpert/phpstan-magento",
@@ -5608,21 +5608,21 @@
         },
         {
             "name": "youwe/testing-suite",
-            "version": "2.16.2",
+            "version": "2.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/YouweGit/testing-suite.git",
-                "reference": "b2ae1dc94f483edd0a9bef6e4f010bc0d0bf030d"
+                "reference": "3e1206b97c6faca22788d599ed93d08ccf446a6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/YouweGit/testing-suite/zipball/b2ae1dc94f483edd0a9bef6e4f010bc0d0bf030d",
-                "reference": "b2ae1dc94f483edd0a9bef6e4f010bc0d0bf030d",
+                "url": "https://api.github.com/repos/YouweGit/testing-suite/zipball/3e1206b97c6faca22788d599ed93d08ccf446a6c",
+                "reference": "3e1206b97c6faca22788d599ed93d08ccf446a6c",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1 || ^2.0",
-                "enlightn/security-checker": "^1.5",
+                "enlightn/security-checker": "^1.5 || ^2.0",
                 "kint-php/kint": "@stable",
                 "php": "^7.2 || ^8.0",
                 "php-parallel-lint/php-parallel-lint": "^1.2",
@@ -5642,14 +5642,15 @@
                 "mikey179/vfsstream": "@stable"
             },
             "bin": [
+                "bin/youwe-container-detected-exec",
                 "bin/youwe-testing-suite"
             ],
             "type": "composer-plugin",
             "extra": {
+                "class": "Youwe\\TestingSuite\\Composer\\Plugin",
                 "grumphp": {
                     "config-default-path": "grumphp.yml"
-                },
-                "class": "Youwe\\TestingSuite\\Composer\\Plugin"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -5681,18 +5682,18 @@
             "description": "Contains Youwe's default testing packages for php.",
             "support": {
                 "issues": "https://github.com/YouweGit/testing-suite/issues",
-                "source": "https://github.com/YouweGit/testing-suite/tree/2.16.2"
+                "source": "https://github.com/YouweGit/testing-suite/tree/2.19.1"
             },
-            "time": "2023-02-20T16:41:49+00:00"
+            "time": "2024-12-05T13:21:33+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
