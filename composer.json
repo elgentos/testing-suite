@@ -8,6 +8,7 @@
         }
     ],
     "require": {
+        "bitexpert/phpstan-magento": "*",
         "digitalrevolution/php-codesniffer-baseline": "^1.1",
         "elgentos/coding-standard-phpstorm": "^1.0",
         "youwe/testing-suite": "^3"
